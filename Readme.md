@@ -59,4 +59,4 @@ The application will be running on <http://localhost:5000> by default.
 
 ## NRE_analyser
 
-![NRE_Analyser](images\NRE_Analyzerapp_image.png)
+![NRE_Analyser](https://github.com/Nehadasmk/DataScience_Project/blob/main/images/NRE_Analyzerapp_image.png)
