@@ -1,0 +1,3 @@
+Nice to meet you, Neha! It sounds like you have an interesting background. Palakkad is known for its lush greenery, and Bosch is a renowned company in the engineering and technology sector. Working as a software engineer must be both challenging and rewarding.
+
+Regarding NER (Named Entity Recognition), it's a fascinating field in natural language processing where the goal is to identify and classify named entities in text into predefined categories such as names of persons, organizations, locations, etc. If you have any specific questions about NER or anything else, feel free to ask!
