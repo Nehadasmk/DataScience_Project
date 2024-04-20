@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Entity Recognition App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">Name Entity Recognition App</h1>
+    <div class="container bg-grey" style="border-radius:15px;padding:20px;">
+        <form action="/entity" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Upload File</label>
+                <div class="custom-file">
+                    <input type="file" name="file" class="custom-file-input" id="file" aria-describedby="fileHelp"
+                        accept=".csv, .xls, .xlsx, .pdf, .txt">
+                    <label class="custom-file-label" for="file" id="fileLabel">Choose file</label>
+                </div>
+
+                <script>
+                    document.getElementById('file').addEventListener('change', function () {
+                        var fileName = document.getElementById('file').files[0].name;
+                        document.getElementById('fileLabel').innerText = fileName;
+                    });
+                </script>
+
+                <small id="fileHelp" class="form-text text-muted">Please select a file (CSV, Excel, PDF, txt).</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Entity</button>
+        </form>
+
+    </div>
+
+    <div class="container">
+        {% if html and text %}
+        <p>Original Text: <br> {{text|safe}}</p>
+        <p>Entity Text: <br> {{html|safe}}</p>
+        {% endif %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
