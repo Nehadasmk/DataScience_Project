@@ -1,6 +1,6 @@
-# NRE_analyser
+# NER_analyser
 
-NRE_analyser is a tool for Named Entity Recognition (NER) and analysis of text documents, PDF, CSV files also Excel sheets. It utilizes spaCy for natural language processing tasks and provides a Flask web interface for users to upload documents and visualize named entities detected in them.
+NER_analyser is a tool for Named Entity Recognition (NER) and analysis of text documents, PDF, CSV files also Excel sheets. It utilizes spaCy for natural language processing tasks and provides a Flask web interface for users to upload documents and visualize named entities detected in them.
 
 ## Features
 
